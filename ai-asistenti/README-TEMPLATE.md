@@ -1,6 +1,6 @@
 # Název asistenta
 
-## Řešitelé
+## Autoři
 
 ## Jaký problém jsme se snažili vyřešit
 
