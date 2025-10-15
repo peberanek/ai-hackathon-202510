@@ -1,0 +1,68 @@
+
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title>Sci Article Assistant – logo icon</title>
+  <desc>Otevřená kniha, lupa s fajfkou a malé uzly propojené čarami, na gradientním pozadí.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+    <style>
+      :root{
+        --bg:#0F172A;          /* fallback pozadí (nepoužito, jen pro snadnou změnu) */
+        --paper:#FFFFFF;       /* kniha */
+        --ink:#1F2937;         /* linky na knize */
+        --accent:#14B8A6;      /* obrys lupy */
+        --verify:#10B981;      /* fajfka */
+        --nodes:#E2E8F0;       /* uzly/čáry */
+      }
+      .shadow{ filter:url(#); } /* placeholder pro případný filter */
+    </style>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="8" y="8" width="240" height="240" rx="28" fill="url(#g)"/>
+
+  <!-- Open book -->
+  <!-- Levá stránka -->
+  <path d="M56 92
+           C56 78, 82 70, 110 74
+           L110 166
+           C82 162, 56 170, 56 184
+           Z"
+        fill="var(--paper)"/>
+  <!-- Pravá stránka -->
+  <path d="M200 92
+           C200 78, 174 70, 146 74
+           L146 166
+           C174 162, 200 170, 200 184
+           Z"
+        fill="var(--paper)"/>
+  <!-- Hřbet / střed knihy -->
+  <rect x="110" y="74" width="36" height="92" fill="var(--paper)"/>
+  <!-- Dekorativní linky textu -->
+  <g stroke="var(--ink)" stroke-opacity="0.25" stroke-width="2">
+    <line x1="68" y1="102" x2="118" y2="102"/>
+    <line x1="68" y1="116" x2="118" y2="116"/>
+    <line x1="68" y1="130" x2="118" y2="130"/>
+    <line x1="138" y1="102" x2="188" y2="102"/>
+    <line x1="138" y1="116" x2="188" y2="116"/>
+    <line x1="138" y1="130" x2="188" y2="130"/>
+  </g>
+
+  <!-- Magnifying glass -->
+  <circle cx="162" cy="146" r="26" fill="none" stroke="var(--accent)" stroke-width="6"/>
+  <line x1="179" y1="163" x2="196" y2="180" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Verification checkmark inside lens -->
+  <path d="M151 146 l8 8 l16 -18" fill="none" stroke="var(--verify)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Recommender graph nodes (top-right) -->
+  <g stroke="var(--nodes)" stroke-width="3" fill="var(--nodes)">
+    <line x1="176" y1="64" x2="196" y2="74"/>
+    <line x1="196" y1="74" x2="214" y2="58"/>
+    <circle cx="176" cy="64" r="4"/>
+    <circle cx="196" cy="74" r="4"/>
+    <circle cx="214" cy="58" r="4"/>
+  </g>
+</svg>
